@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: "Rubik", sans-serif;
+}
+nav{
+    background-color: firebrick;   
+}
+.inner-width{
+    max-width: 1400px;
+    padding: 10px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+}
+nav .logo{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    
+}
+.logo i{
+    font-size: 40px;
+}
+nav .menu-items{
+    display: flex;
+    column-gap: 20px;
+}
+nav .menu-items li a{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+/******************Header**********************/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.6)) , url('../members/img/player.jpg');
+    background-size: contain;
+    background-position: center center;
+}
+header .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 1400px;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 20px;
+}
+header input[type='button']{
+    width: 80px;
+    background-color: firebrick;
+    outline: none;
+    border: 1px solid firebrick;
+    border-radius: 5px;
+    color: #f1f1f1;
+    padding: 10px 20px;
+    transition: .3s linear;
+}
+header input[value='Sign in']{
+    
+    background-color: transparent;
+}
+header input[type='button']:hover{
+    background-color: rgb(145, 7, 7);
+}
